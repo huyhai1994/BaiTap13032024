@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let NaturalNumber = 0;
+    let CountNaturalNumber_divisible_to7 = 0;
+    let Sum_of_NaturalNumber_divisible_to7 = 0;
+    let Limit_Of_CountNaturalNumber = 10;
+    while (CountNaturalNumber_divisible_to7 < Limit_Of_CountNaturalNumber) {
+        let Number_divisible_to7 = NaturalNumber % 7 === 0;
+        if (Number_divisible_to7) {
+            console.log("Số Tự nhiên chia hết cho 7 là: " + NaturalNumber);
+            Sum_of_NaturalNumber_divisible_to7  += NaturalNumber;
+            CountNaturalNumber_divisible_to7 ++;
+        }
+        NaturalNumber ++;
+    }
+    console.log( Sum_of_NaturalNumber_divisible_to7);
+
+
+</script>
+
+</body>
+</html>

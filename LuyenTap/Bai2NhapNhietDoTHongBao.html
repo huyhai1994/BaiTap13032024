@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let run = true;
+    while (run) {
+        let askForStop = prompt("Do you want to stop [y/n] ?");
+        if (askForStop === "Y" || askForStop === "y") {
+            run = false;
+            break;
+        } else {
+            let UserInputTemperature = +prompt("Please input the Room Temperature: ");
+            let OverHeatTemperature = 100;
+            let SubHeatTemperature = 20;
+            if (UserInputTemperature > OverHeatTemperature) {
+                alert("Please cool down!!");
+            } else if (UserInputTemperature < SubHeatTemperature) {
+                alert("Please raise up temp!!");
+            }
+        }
+    }
+</script>
+</body>
+</html>

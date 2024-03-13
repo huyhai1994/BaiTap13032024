@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập số a: ");
+    let b = prompt("Nhập số b: ");
+    let count = 0;
+    for (a; a <= b; a++) {
+        let condition = a % 5;
+        let conditionTrue = condition === 2;
+        if (conditionTrue) {
+            console.log(a);
+            count++;
+        }
+    }
+    console.log(count)
+</script>
+</body>
+</html>
